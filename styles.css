@@ -1,1 +1,153 @@
 /* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1a1a;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+footer .content {
+  width: 100%;
+  padding: 40px 7vw 0 7vw;
+}
+
+footer .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+}
+
+footer .logo-details .logo_name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+footer .media-icons {
+  display: flex;
+  gap: 16px;
+}
+
+footer .media-icons a {
+  height: 42px;
+  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #444;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: background 0.30s, color 0.30s;
+  text-decoration: none;
+}
+
+footer .media-icons a.facebook { background: #4267B2; }
+footer .media-icons a.twitter { background: #1DA1F2; }
+footer .media-icons a.instagram { background: #E1306C; }
+footer .media-icons a.linkedin { background: #0a66c2; }
+footer .media-icons a.youtube { background: #FF0000; }
+
+footer .media-icons a:hover {
+  opacity: 0.8;
+}
+
+footer .link-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px 10px;
+  padding-bottom: 28px;
+}
+
+footer .box {
+  min-width: 140px;
+  flex: 1 1 140px;
+}
+
+footer .box .link_name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  text-decoration: underline;
+  letter-spacing: 0.5px;
+}
+
+footer .box li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer .box a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+footer .box a:hover {
+  color: #aaa;
+}
+
+footer .bottom-details {
+  width: 100%;
+  background: #222835;
+  color: #ddd;
+  padding: 14px 7vw;
+  border-radius: 0;
+}
+
+footer .bottom-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  footer .content {
+    padding: 38px 3vw 0 3vw;
+  }
+  footer .link-boxes {
+    gap: 28px 3vw;
+  }
+  footer .box {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .top,
+  footer .bottom-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  footer .link-boxes {
+    flex-direction: column;
+    gap: 18px 0;
+  }
+  footer .box {
+    min-width: 100%;
+  }
+  footer .bottom-details {
+    padding: 18px 4vw;
+  }
+}
+
